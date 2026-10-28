@@ -1,0 +1,151 @@
+baseURL: "https://blog.sherlock.com/"
+title: "数据工程手记"
+theme: "PaperMod"
+
+defaultContentLanguage: "zh"
+locale: "zh-cn"
+hasCJKLanguage: true
+timeZone: "Asia/Hong_Kong"
+
+enableRobotsTXT: true
+enableEmoji: true
+enableGitInfo: false
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+pagination:
+  pagerSize: 8
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  section:
+    - HTML
+    - RSS
+
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      definitionList: true
+      footnote: true
+      table: true
+      typographer: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    tabWidth: 4
+    style: "catppuccin-mocha"
+
+params:
+  env: production
+  description: "数据仓库、Flink CDC、Apache Doris 与 AI 数据工程的实践笔记"
+  keywords:
+    - 数据仓库
+    - 实时数仓
+    - Flink CDC
+    - Apache Doris
+    - DataX
+    - 智能问数
+  author: "Rock Star"
+
+  # 主题与排版
+  defaultTheme: "dark"
+  disableThemeToggle: false
+  DateFormat: "2006-01-02"
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
+  ShowToc: true
+  TocOpen: false
+  UseHugoToc: true
+  hideSummary: false
+  hidemeta: false
+  hideAuthor: true
+  comments: false
+  disableScrollToTop: false
+  disableSpecial1stPost: true
+  disableAnchoredHeadings: false
+
+  assets:
+    disableHLJS: true
+    favicon: "/favicon.svg"
+    disableFingerprinting: false
+
+  # 首页个人名片模式
+  profileMode:
+    enabled: true
+    title: "数据工程手记"
+    subtitle: |
+      数仓工程师 · 实时链路与 AI 数据工程
+      记录 Flink CDC、Doris、Hive 与智能问数的落地细节
+    imageUrl: "/avatar.svg"
+    imageTitle: "数据工程手记"
+    imageWidth: 180
+    imageHeight: 180
+    buttons:
+      - name: 文章
+        url: posts
+      - name: 关于
+        url: about
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/"
+    - name: rss
+      url: "index.xml"
+    - name: email
+      url: "mailto:hello@example.com"
+
+  label:
+    text: "数据工程手记"
+    icon: "/favicon.svg"
+    iconHeight: 28
+
+  # 搜索（PaperMod 内置 Fuse.js）
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 50

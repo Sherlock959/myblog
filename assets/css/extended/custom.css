@@ -1,0 +1,68 @@
+/* 中文优先的字体栈，覆盖 PaperMod 默认字体 */
+:root {
+  --accent: #22d3ee;
+  --content-gap: 22px;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC",
+    "Noto Sans CJK SC", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* 正文行距略放宽，长文可读性更好 */
+.post-content {
+  line-height: 1.85;
+}
+
+.post-content code {
+  font-size: 0.9em;
+}
+
+.post-content pre code {
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+/* 代码块与表格的圆角处理 */
+.post-content pre,
+.post-content table,
+.post-content blockquote {
+  border-radius: var(--radius);
+}
+
+/* 首页名片微调 */
+.profile .profile_inner h1 {
+  letter-spacing: 0.02em;
+}
+
+.profile .profile_inner span {
+  line-height: 1.7;
+}
+
+/* 列表页文章卡片间距 */
+.post-entry {
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.post-entry:hover {
+  transform: translateY(-2px);
+}
+
+/* 顶部导航高亮当前栏目（主题已有下划线，这里补一层主题色） */
+#menu .active {
+  color: var(--accent);
+}
+
+/* 标签胶囊 */
+.terms-tags a {
+  border-radius: 999px;
+}
+
+/* 表格横向滚动，避免窄屏溢出 */
+.post-content table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}

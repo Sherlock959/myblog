@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Data engineering avatar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#131b2e"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.55" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" rx="72" fill="url(#bg)"/>
+  <circle cx="200" cy="205" r="150" fill="url(#glow)"/>
+
+  <g fill="none" stroke="url(#edge)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M200 96 L292 148 L292 252 L200 304 L108 252 L108 148 Z" stroke-opacity="0.85"/>
+    <path d="M200 96 L200 200 L292 252 M200 200 L108 252" stroke-opacity="0.55"/>
+    <path d="M200 200 L292 148 M200 200 L108 148" stroke-opacity="0.35"/>
+  </g>
+
+  <g fill="#22d3ee">
+    <circle cx="200" cy="96" r="7"/>
+    <circle cx="292" cy="148" r="5.5" fill="#818cf8"/>
+    <circle cx="292" cy="252" r="5.5" fill="#a855f7"/>
+    <circle cx="200" cy="304" r="7"/>
+    <circle cx="108" cy="252" r="5.5" fill="#818cf8"/>
+    <circle cx="108" cy="148" r="5.5" fill="#22d3ee"/>
+    <circle cx="200" cy="200" r="9"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="#7dd3fc" font-size="20" opacity="0.75">
+    <text x="200" y="352" text-anchor="middle" letter-spacing="6">ODS · DWD · DWS</text>
+  </g>
+</svg>
