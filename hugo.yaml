@@ -84,7 +84,7 @@ params:
 
   assets:
     disableHLJS: true
-    favicon: "/favicon.svg"
+    favicon: "favicon.svg"
     disableFingerprinting: false
 
   # 首页个人名片模式
@@ -94,7 +94,7 @@ params:
     subtitle: |
       数仓工程师 · 实时链路与 AI 数据工程
       记录 Flink CDC、Doris、Hive 与智能问数的落地细节
-    imageUrl: "/avatar.svg"
+    imageUrl: "avatar.svg"
     imageTitle: "数据工程手记"
     imageWidth: 180
     imageHeight: 180
@@ -114,7 +114,7 @@ params:
 
   label:
     text: "数据工程手记"
-    icon: "/favicon.svg"
+    icon: "favicon.svg"
     iconHeight: 28
 
   # 搜索（PaperMod 内置 Fuse.js）
